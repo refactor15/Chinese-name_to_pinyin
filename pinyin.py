@@ -38,6 +38,7 @@ def name_to_pinyin(str, order=0, caps=0, sep=""):
         list0.reverse()
     return " ".join(list0)
 
+
 with open("name_example.txt", "r", encoding="utf-8") as f:
     mingzi = [x.strip("\n") for x in f.readlines()]
 with open("pinyin_example.txt", "w", encoding="utf-8") as g:
